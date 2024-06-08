@@ -5,8 +5,7 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=block');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -15,11 +14,112 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(11, 54, 140, 0.08);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.picker-btn-container {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  gap: 8px;
+  width: 373px;
+  justify-content: center;
+
+  margin-top: 92px;
+}
+
+#datetime-picker {
+  width: 253px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 0 0 0 16px;
+  outline: none;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  transition: all 175ms ease-in-out;
+}
+
+#datetime-picker:hover {
+  border-color: #000;
+}
+
+#datetime-picker:active {
+  color: #000;
+  border-color: #4e75ff;
+}
+
+#datetime-picker:disabled {
+  color: gray;
+  border-color: gray;
+  background-color: #fafafa;
+}
+
+[data-start] {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+  background: #4e75ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 75px;
+  height: 40px;
+  transition: all 175ms ease-in-out;
+}
+
+[data-start]:hover {
+  background-color: #6c8cff;
+}
+
+[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  background-color: #fff;
+  display: flex;
+  gap: 24px;
+  width: 353px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 32px;
+  font-family: Montserrat;
+  border-radius: 8px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  color: #2e2f42;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 1.6px;
+}
+
+.label {
+  color: #2e2f42;
+  line-height: 24px;
+  text-transform: uppercase;
 }
