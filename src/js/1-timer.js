@@ -34,6 +34,7 @@ flatpickr(elements.input, flatpickrOptions);
 function handleDateSelection(selectedDate) {
   if (selectedDate.getTime() <= Date.now()) {
     iziToast.error({
+      position: 'topRight',
       message: 'Please choose a date in the future',
     });
     elements.startBtn.disabled = true;
@@ -59,6 +60,7 @@ function startTimer() {
       elements.input.disabled = false;
       resetDisplayedTime();
       iziToast.success({
+        position: 'topRight',
         message: 'Countdown finished!',
       });
     }

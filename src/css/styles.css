@@ -23,6 +23,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 108px;
+  margin-left: 32px;
+}
+
 .picker-btn-container {
   display: flex;
   flex-direction: row;
@@ -30,8 +38,6 @@
   gap: 8px;
   width: 373px;
   justify-content: center;
-
-  margin-top: 92px;
 }
 
 #datetime-picker {
@@ -122,4 +128,98 @@
   color: #2e2f42;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+/* ? Snackbar */
+
+.form {
+  margin-top: 90px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  color: #2e2f42;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  border-radius: 16px;
+}
+
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  line-height: 24px;
+  width: 360px;
+}
+
+.form > label > input {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+  margin-bottom: 16px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  transition: all 175ms ease-in-out;
+}
+
+.form > label > input:hover {
+  border-color: #000;
+}
+
+.form > label > input:active {
+  border-color: #4e75ff;
+}
+
+.form > fieldset {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 334.4px;
+  margin: 0 0 24px;
+  background-color: #fff;
+  transition: all 175ms ease-in-out;
+}
+
+.form > fieldset:hover {
+  border-color: #000;
+}
+
+.form > fieldset:active {
+  border-color: #000;
+}
+
+.form > fieldset > label > input {
+  margin: 24px 0 8px 48px;
+}
+
+.form > button {
+  display: flex;
+  width: 360px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  transition: all 175ms ease-in-out;
+}
+
+.form > button:hover {
+  background-color: #6c8cff;
+}
+
+input[type='radio'] {
+  transform: scale(1.5);
 }
